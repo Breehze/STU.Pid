@@ -1,6 +1,7 @@
 import subprocess
 from typing import Optional
 from pathlib import Path
+from os import listdir
 
 def run_bin(path  ,stdin : list[str]|None = None) -> Optional[str]:
     p = subprocess.Popen((path),stdout=subprocess.PIPE,stdin=subprocess.PIPE)
@@ -9,15 +10,15 @@ def run_bin(path  ,stdin : list[str]|None = None) -> Optional[str]:
         p.stdin.close()
     p.wait()
     output = p.stdout.read()   
-    #if compile_from_source:
-    #   remove("compiled")
     return output.decode()
 
 
 def compile(path:str):
     p = subprocess.Popen(("gcc","-o","compiled",path),stdout=subprocess.PIPE,stdin=subprocess.PIPE)
     p.wait()
-    return "./compiled"
+    #Windows workaround
+    compiled_path = filter(lambda x : x.startswith("compiled"),listdir())
+    return f"./{list(compiled_path)[0]}"
 
 
 def parse_tests(map:tuple[int,int] = (1,1),path : str|None = None) -> tuple[list,list]:
