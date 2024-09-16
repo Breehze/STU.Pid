@@ -24,4 +24,4 @@ Run tests from i.txt and compare with o.txt, default input/output ratio is 1,1.
 ----------------------------
     python main.py -f 7.c -c -p ./prprtests/cv1/u7 -tr 1,2
 
-This will take file 7.c compile it and use tests from specified directory. One input should return 2 outputs hence the test ration 1,2.
+This will take file 7.c compile it and use tests from specified directory. One input should return 2 outputs hence the test ratio 1,2.
