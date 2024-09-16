@@ -1,0 +1,10 @@
+Sucet nacitanych cisel je: 18
+Sucin nacitanych cisel je: 80
+Sucet nacitanych cisel je: 10
+Sucin nacitanych cisel je: 25
+Sucet nacitanych cisel je: 10
+Sucin nacitanych cisel je: 21
+Sucet nacitanych cisel je: 17
+Sucin nacitanych cisel je: 30
+Sucet nacitanych cisel je: 24
+Sucin nacitanych cisel je: 144

@@ -1,0 +1,5 @@
+Druha mocnina cisla 8 je: 64
+Druha mocnina cisla 5 je: 25
+Druha mocnina cisla 10 je: 100
+Druha mocnina cisla 12 je: 144
+Druha mocnina cisla -3 je: 9

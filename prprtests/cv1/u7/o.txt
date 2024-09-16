@@ -1,0 +1,16 @@
+Cena bez dane: 10
+Predajna cena s danou 20%: 12.0
+Cena bez dane: 50
+Predajna cena s danou 20%: 60.0
+Cena bez dane: 100
+Predajna cena s danou 20%: 120.0
+Cena bez dane: 123
+Predajna cena s danou 20%: 147.6
+Cena bez dane: 1000
+Predajna cena s danou 20%: 1200.0
+Cena bez dane: 9999
+Predajna cena s danou 20%: 11998.8
+Cena bez dane: 0
+Predajna cena s danou 20%: 0.0
+Cena bez dane: -10
+Predajna cena s danou 20%: -12.0

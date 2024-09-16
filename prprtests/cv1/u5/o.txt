@@ -1,0 +1,5 @@
+Obvod kruhu s polomerom 6.000000 je: 37.680000
+Obvod kruhu s polomerom 10.000000 je: 62.800000
+Obvod kruhu s polomerom 2.500000 je: 15.700000
+Obvod kruhu s polomerom 15.000000 je: 94.200000
+Obvod kruhu s polomerom 8.000000 je: 50.240000
