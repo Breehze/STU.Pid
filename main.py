@@ -12,9 +12,13 @@ arg_parser.add_argument("-c","--compile",action="store_true")
 args = arg_parser.parse_args()
 
 def main():
-    ratio = args.test_ratio if args.test_ratio else (1,1)
+    ratio = args.test_ratio if args.test_ratio else None
     per_test_time_restriction = args.time_restriction if args.time_restriction else None
-    inputs,desired_results = utils.parse_tests(ratio) if not args.tests_fro_path else utils.parse_tests(ratio,args.tests_fro_path)
+    
+    if ratio:
+        inputs,desired_results = utils.parse_tests(ratio) if not args.tests_fro_path else utils.parse_tests(ratio,args.tests_fro_path)
+    else:
+        inputs,desired_results = utils.parse_tests_ratio_infered() if not args.tests_fro_path else utils.parse_tests_ratio_infered(args.tests_fro_path)
     path = args.file_path
     compile = utils.compile(path) if args.compile else None
     if compile:
@@ -44,6 +48,8 @@ def main():
             print(f"│Instead got :\n│ {'\n│'.join(program_out.split(sep='\n'))}")
             print("╰─────────────────")
         test_num+=1
+
+    print(f"\n⏳ Code ran in: {averageruntime} ms")
     remove(compile) if compile else None
     
 if __name__ == "__main__":

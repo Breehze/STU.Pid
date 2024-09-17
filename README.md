@@ -3,7 +3,7 @@
 **S**imple **T**esting **U**tility for **P**rpr **i**ncluding **d**sa. Can run binaries aswell as compile from source.
 
 ### Prerequisites:
-* Python 3.12 >
+* Python 3.12 <
 * Gcc for for .c compilation
 * Brain
 ### Setup:
@@ -12,7 +12,7 @@ Everything is std python.
     
 ### Usage:
 #### Basic usage:
-Run tests from i.txt and compare with o.txt, default input/output ratio is 1,1.   
+Run tests from i.txt and compare with o.txt. Test ratios(how many inputs will result in how many outputs) is infered at runtime. However if this fails you can use -tr flag.   
         
         python main.py -f yourbin 
 
@@ -25,3 +25,7 @@ Run tests from i.txt and compare with o.txt, default input/output ratio is 1,1.
     python main.py -f 7.c -c -p ./prprtests/cv1/u7 -tr 1,2
 
 This will take file 7.c compile it and use tests from specified directory. One input should return 2 outputs hence the test ratio 1,2.
+    
+    python main.py -7.c -c -p ./prprtests/cv1/u7 
+
+Same as first example, except the -tr flag. Tester will automatically infer that 1 input will result in 2 outputs.
