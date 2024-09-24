@@ -1,0 +1,14 @@
+Minimum: 0.50
+Maximum: 4.70
+Minimum: -3.00
+Maximum: -1.50
+Minimum: 2.10
+Maximum: 2.10
+Minimum: -0.10
+Maximum: 7.20
+Minimum: 5.50
+Maximum: 5.50
+Minimum: 0.00
+Maximum: 0.00
+Minimum: -5.50
+Maximum: 4.40

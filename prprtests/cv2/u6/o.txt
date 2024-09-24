@@ -1,0 +1,8 @@
+5 + 3 = 8
+10 - 4 = 6
+7 * 6 = 42
+20 / 5 = 4
+Zle zadana volba.
+-8 + 3 = -5
+Zle zadana volba.
+

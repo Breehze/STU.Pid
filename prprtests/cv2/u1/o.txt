@@ -1,0 +1,6 @@
+Priemer cisel 3.5 4.8 7.561 je: 5.287
+Priemer cisel 10 20 30 je: 20
+Priemer cisel -5.5 -10.2 -3.1 je: -6.26667
+Priemer cisel 1.111 2.222 3.333 je: 2.222
+Priemer cisel 0 0 0 je: 0
+Priemer cisel 100 50 25 je: 58.3333
