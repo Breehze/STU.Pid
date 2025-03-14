@@ -5,20 +5,15 @@ from os import remove
 
 arg_parser = argparse.ArgumentParser()
 arg_parser.add_argument("-f","--file-path",type=str,required=True,help="Either a path to binary or .c to compile with gcc")
-arg_parser.add_argument("-tr","--test-ratio",type=utils.string2tuple)
 arg_parser.add_argument("-t","--time-restriction",type=float)
-arg_parser.add_argument("-p","--tests-fro-path",type=str)
 arg_parser.add_argument("-c","--compile",action="store_true")
 args = arg_parser.parse_args()
 
 def main():
-    ratio = args.test_ratio if args.test_ratio else None
     per_test_time_restriction = args.time_restriction if args.time_restriction else None
     
-    if ratio:
-        inputs,desired_results = utils.parse_tests(ratio) if not args.tests_fro_path else utils.parse_tests(ratio,args.tests_fro_path)
-    else:
-        inputs,desired_results = utils.parse_tests_ratio_infered() if not args.tests_fro_path else utils.parse_tests_ratio_infered(args.tests_fro_path)
+    inputs,desired_results = utils.parse_tests()
+    
     path = args.file_path
     compile = utils.compile(path) if args.compile else None
     if compile:
